@@ -23,11 +23,11 @@ const Quiz = props => {
     const [answerSubmitted,setAnswerSubmitted] = useState(false);
 
     useEffect(()=>{
-        const url = `https://opentdb.com/api.php?amount=3&category=${id}&difficulty=easy&type=multiple`;
+        const url = `https://opentdb.com/api.php?amount=10&category=${id}&difficulty=easy&type=multiple`;
         axios
 			.get(url)
 			.then(response => {
-                for(let i=0;i<=2;i++){
+                for(let i=0;i<=9;i++){
                     const { question, incorrect_answers, correct_answer } = response.data.results[i];
                     setQuestions(questions =>[...questions,{
                         		question: question,

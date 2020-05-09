@@ -19,19 +19,22 @@ const networkRequests = (endPoint,method="GET",data = {}) =>
       // console.log(config.body);
     }
     fetch(`${endPoint}`, config)
-      .then(response => {
-        if (response.ok) {
-          console.log(response);
-          return response.json();
-        } else {
-          // console.log(serverUrl);
-          console.log(endPoint);
-          console.log(response);
-          console.log("response from server" + response);
-          return response.json();
-          // throw Error("network request failed!!");
-        }
-      })
+          .then(response => {
+            if (response.ok) {
+              console.log(response);
+              return response.json();
+            } else {
+              // console.log(serverUrl);
+              console.log(endPoint);
+              console.log(response);
+              console.log("response from server" + response);
+              return response.json();
+              // throw Error("network request failed!!");
+            }
+          })
+          .catch(error=>{
+            return error.json();
+          })
       .then(result => {
         console.log("result from server"+result.data);
         resolve(result);

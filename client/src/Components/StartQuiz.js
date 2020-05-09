@@ -3,7 +3,7 @@ import "../styles/quizStyles.scss";
 import categories from "../utils/Categories";
 import {useHistory } from "react-router-dom";
 import {userContext} from "../Context/context";
-import {routes} from "../routes/routes";
+// import {routes} from "../routes/routes";
 
 const StartQuiz = () =>{
 

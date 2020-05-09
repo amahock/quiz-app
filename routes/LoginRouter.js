@@ -35,7 +35,9 @@ LoginRouter.post("/login", (req, res) => {
             });
           } else {
             console.log("Invalid request");
-            res.status(400).send("Invalid Request");
+            res.status(400).send({
+              status : "user not found"
+            });
           }
         })
         .catch(error => {

@@ -28,7 +28,6 @@ const LoginPage = props => {
     networkRequests("/user/login", "POST", { email, password })
       .then(response => {
         user.setIsLoggedIn(true);
-         
         localStorage.setItem("jwtToken", response.jwtToken);
         localStorage.setItem("stuId", response.userId);
         localStorage.setItem("name", response.name);
@@ -39,10 +38,15 @@ const LoginPage = props => {
         history.push(routes.home, { usrname: name });
       })
       .catch(error => {
+
         user.setIsLoggedIn(false);
-        // console.error(error);
+        // console.log(error.status);
         // console.log("entered into login route catch part");
+        if(error.status === "user not found"){
+          setErrorMessage("***Email is not registered. Please use SignUp link to register");
+        } else {
         setErrorMessage("***Invalid username and password!!!");
+        }
       });
   };
 

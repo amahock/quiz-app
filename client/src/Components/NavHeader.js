@@ -1,7 +1,6 @@
 import React, { useState, useContext, Fragment } from "react";
 import "../styles.css";
 import {
-  Collapse,
   Navbar,
   NavbarToggler,
   NavbarBrand,
@@ -28,6 +27,7 @@ const NavHeader = () => {
     localStorage.removeItem("jwtToken");
     localStorage.removeItem("stuId");
     localStorage.removeItem("name");
+    localStorage.removeItem("startQuiz");
     history.push(routes.home);
   };
   return (

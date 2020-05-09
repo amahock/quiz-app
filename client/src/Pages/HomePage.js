@@ -3,6 +3,9 @@ import { userContext} from "../Context/context";
 
 const HomePage = props => {
   const user = useContext(userContext);
+  localStorage.setItem("startQuiz",false);
+  user.userDetails.startQuiz = false;
+  user.userDetails.name = localStorage.getItem("name");
   return (
     <Fragment>
       <div className="column-middle">

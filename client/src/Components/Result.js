@@ -17,8 +17,8 @@ const Result = () =>{
 	function diff(start, end) {
 		var diff = end.getTime() - start.getTime();
 		console.log("time diff is : "+diff);
-		var milliseconds = parseInt((diff % 1000) / 100),
-		seconds = Math.floor((diff / 1000) % 60),
+		// var milliseconds = parseInt((diff % 1000) / 100),
+	var	seconds = Math.floor((diff / 1000) % 60),
 		minutes = Math.floor((diff / (1000 * 60)) % 60),
 		hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
     
@@ -31,6 +31,8 @@ const Result = () =>{
 	
 	const timeTaken = diff(startDate,endDate);
 
+	
+	const shareUrl = `You got ${score} out of ${questionsWithUserAnswer.length} questions right`;
     const toggleAnswers = () =>{
 		setShowAnswers(true);
 	}
@@ -76,7 +78,7 @@ const Result = () =>{
 					</button>
 					<hr/>
 					<ShareResults 
-						url="www.abcschool.com/quiz/results" 
+						url={shareUrl}
 						text="Check below for your quiz results"
 					/>
 				</div>

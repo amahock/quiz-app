@@ -35,6 +35,7 @@ const App = () => {
           setIsLoggedIn(true);
           userDetails.stuId = localStorage.getItem("stuId");
           userDetails.name = localStorage.getItem("name");
+          userDetails.startQuiz = localStorage.getItem("startQuiz");
         } else {
           setIsLoggedIn(false);
         }
@@ -57,6 +58,9 @@ const App = () => {
             <br />
             <br />
             <Switch>
+            {/* <Route path="/">
+                <HomePage />
+              </Route> */}
               <Route path={routes.home}>
                 <HomePage />
               </Route>
