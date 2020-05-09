@@ -1,4 +1,4 @@
-import React from "../../node_modules/@types/react";
+import React from "react";
 
 const FormLayout = ({ heading, formContent }) => (
   <div className="col-sm-9 col-md-7 col-lg-5 mx-auto">

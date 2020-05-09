@@ -1,6 +1,6 @@
-import React, { useState, Fragment } from '../../node_modules/@types/react';
-import {useHistory } from '../../node_modules/react-router-dom';
-import Parser from '../../node_modules/html-react-parser';
+import React, { useState, Fragment } from 'react';
+import {useHistory } from 'react-router-dom';
+import Parser from 'html-react-parser';
 import ProgressBar from './ProgressBar';
 import ShareResults from "./ShareResults";
 import {routes} from "../routes/routes";

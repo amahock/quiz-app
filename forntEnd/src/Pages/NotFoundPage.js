@@ -1,6 +1,6 @@
-import React from "../../node_modules/@types/react";
-import { Button } from "../../node_modules/reactstrap/lib";
-import {useHistory} from "../../node_modules/react-router-dom";
+import React from "react";
+import { Button } from "reactstrap";
+import {useHistory} from "react-router-dom";
 import { routes } from "../routes/routes";
 // import PageNotFoundImage from "../Images/PageNotFoundImage.png";
 

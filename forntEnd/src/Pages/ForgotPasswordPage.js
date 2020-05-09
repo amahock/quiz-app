@@ -1,7 +1,7 @@
-import React, { useState, Fragment } from "../../node_modules/@types/react";
-import { useHistory } from "../../node_modules/react-router-dom";
+import React, { useState, Fragment } from "react";
+import { useHistory } from "react-router-dom";
 import networkRequests from "../services/networkRequests";
-import { Button } from "../../node_modules/reactstrap/lib";
+import { Button } from "reactstrap";
 import FormLayout from "../Components/FormLayout";
 import { routes } from "../routes/routes";
 

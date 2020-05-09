@@ -1,5 +1,5 @@
-import React, { Fragment, useContext } from "../../node_modules/@types/react";
-import { NavLink } from "../../node_modules/reactstrap/lib";
+import React, { Fragment, useContext } from "react";
+import { NavLink } from "reactstrap";
 import {routes} from "../routes/routes";
 import {userContext} from "../Context/context";
 

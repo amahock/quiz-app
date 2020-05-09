@@ -1,6 +1,6 @@
-import React, { useState, useContext } from "../../node_modules/@types/react";
+import React, { useState, useContext } from "react";
 import "../styles/loginStyle.css";
-import { useHistory } from "../../node_modules/react-router-dom";
+import { useHistory } from "react-router-dom";
 import networkRequests from "../services/networkRequests";
 import { userContext } from "../Context/context";
 import FormLayout from "../Components/FormLayout";

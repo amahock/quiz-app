@@ -1,4 +1,4 @@
-import React, { useState, useContext, Fragment } from "../../node_modules/@types/react";
+import React, { useState, useContext, Fragment } from "react";
 import "../styles.css";
 import {
   Collapse,
@@ -7,8 +7,8 @@ import {
   NavbarBrand,
   NavLink,
   Nav
-} from "../../node_modules/reactstrap/lib";
-import { useHistory } from "../../node_modules/react-router-dom";
+} from "reactstrap";
+import { useHistory } from "react-router-dom";
 import { userContext } from "../Context/context";
 import { routes } from "../routes/routes";
 

@@ -1,7 +1,7 @@
-import React, { useState, useContext, Fragment } from "../../node_modules/@types/react";
+import React, { useState, useContext, Fragment } from "react";
 // import "../styles/loginStyle.css";
-import { Button, Form, FormGroup, Label, Input, Col,NavLink } from "../../node_modules/reactstrap/lib";
-import { useHistory } from "../../node_modules/react-router-dom";
+import { Button, Form, FormGroup, Label, Input, Col,NavLink } from "reactstrap";
+import { useHistory } from "react-router-dom";
 import networkRequests from "../services/networkRequests";
 import { userContext } from "../Context/context";
 import validateForm from "../Components/FormValidation";

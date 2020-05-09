@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "../../node_modules/@types/react";
-import { Button } from "../../node_modules/reactstrap/lib";
-import { useParams,useHistory } from "../../node_modules/react-router-dom";
+import React, { useState, useEffect } from "react";
+import { Button } from "reactstrap";
+import { useParams,useHistory } from "react-router-dom";
 import { routes } from "../routes/routes";
 import networkRequests from "../services/networkRequests";
 import FormLayout from "../Components/FormLayout";

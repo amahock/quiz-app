@@ -1,8 +1,8 @@
-import React, { Fragment } from "../../node_modules/@types/react";
+import React, { Fragment } from "react";
 import { FacebookShareButton,
 TwitterShareButton,
 WhatsappShareButton,EmailShareButton,EmailIcon,
-FacebookIcon,TwitterIcon,WhatsappIcon } from '../../node_modules/react-share/lib';
+FacebookIcon,TwitterIcon,WhatsappIcon } from 'react-share';
 // import {Button,Glyphicon} from "bootstrap";
 
 const ShareResult = (props) => {

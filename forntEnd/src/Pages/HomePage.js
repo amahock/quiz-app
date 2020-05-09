@@ -1,4 +1,4 @@
-import React, { Fragment, useContext } from "../../node_modules/@types/react";
+import React, { Fragment, useContext } from "react";
 import { userContext} from "../Context/context";
 
 const HomePage = props => {

@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from "../node_modules/@types/react";
+import React, { useEffect, useState } from "react";
 import "./styles.css";
-import {Switch,Route,useHistory,useLocation} from "../node_modules/react-router-dom";
+import {Switch,Route,useHistory,useLocation} from "react-router-dom";
 import NavHeader from "./Components/NavHeader";
 import StartQuiz from "./Components/StartQuiz";
 import Quiz from "./Components/Quiz";

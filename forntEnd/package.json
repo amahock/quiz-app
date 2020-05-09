@@ -1,5 +1,5 @@
 {
-  "name": "frontEnd",
+  "name": "client",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -26,7 +26,7 @@
   "eslintConfig": {
     "extends": "react-app"
   },
-  "proxy": "https://abcschool-quiz-app.herokuapp.com/",
+  "proxy": "https://abcschool-quiz-app.herokuapp.com",
   "browserslist": {
     "production": [
       ">0.2%",

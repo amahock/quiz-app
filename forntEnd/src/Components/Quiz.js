@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "../../node_modules/@types/react";
-import Parser from "../../node_modules/html-react-parser";
-import axios from "../../node_modules/axios";
-import {useHistory,useParams} from "../../node_modules/react-router-dom";
+import React, { useState, useEffect } from "react";
+import Parser from "html-react-parser";
+import axios from "axios";
+import {useHistory,useParams} from "react-router-dom";
 import ProgressBar from "./ProgressBar";
 import {routes} from "../routes/routes";
 import networkRequests from "../services/networkRequests";

@@ -1,7 +1,7 @@
-import React, { useState, useContext } from "../../node_modules/@types/react";
+import React, { useState, useContext } from "react";
 import "../styles/quizStyles.scss";
 import categories from "../utils/Categories";
-import {useHistory } from "../../node_modules/react-router-dom";
+import {useHistory } from "react-router-dom";
 import {userContext} from "../Context/context";
 import {routes} from "../routes/routes";
 
