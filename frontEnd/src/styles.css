@@ -1,0 +1,74 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  /* margin: 10;  */
+}
+
+.nav-header-login-btn {
+  text-align: right;
+}
+
+div {
+  white-space: pre-wrap;
+  }
+pre {
+  white-space: normal;
+}
+.mainHeading {
+  font-size: xx-large;
+  font-family: sans-serif;
+}
+
+.errorMsg {
+  /* background-color: rgba(0,189,133,.2); */
+  color: red;
+}
+
+/* Left and right column */
+.column-side-right {
+  /* background-color: rgba(0,189,133,.2); */
+  width: 20%;
+  text-align: left;
+}
+
+.column-side-left {
+  /* background-color: rgba(0,189,133,.2); */
+  width: 10%;
+  text-align: left;
+}
+
+#leftbar {
+  background-color: lightsteelblue;
+  /* width: 20%; */
+  text-align: left;
+}
+/* Middle column */
+.column-middle {
+  width: 70%;
+  text-align: left;
+  padding-left: 30px;
+  /* background-color: rgba(37,127,249,.2); */
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  /* margin-left: -15%; */
+  background-color: #fff;
+  margin: 0;
+}
+.nav-bar-x {
+background-color:rgb(173, 224, 188);
+/* color: red; */
+}
+
+.nav-bar-x a {
+color:rgb(72, 0, 255);
+}
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column-side-left,
+  .column-middle {
+    width: 100%;
+  }
+}
