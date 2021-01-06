@@ -12,7 +12,7 @@
     "react-share": "^4.1.0",
     "html-react-parser": "^0.10.3",
     "node-sass": "^4.14.1",
-    "axios": "^0.19.2"
+    "axios": "^0.21.1"
   },
   "scripts": {
     "start": "react-scripts start",
